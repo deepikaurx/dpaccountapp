@@ -12,9 +12,9 @@ public class Account {
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
 private Long id;
-private String title;
-private String genre;
-private String rating;
+private String firstname;
+private String lastname;
+private String accountnumber;
 
 
 
@@ -23,10 +23,10 @@ public Account() {
 }
 
 
-public Account(String title, String genre,String rating ) {
-	this.title = title;
-	this.genre = genre;
-	this.rating = rating;
+public Account(String firstname, String lastname,String accountnumber ) {
+	this.firstname = firstname;
+	this.lastname = lastname;
+	this.accountnumber = accountnumber;
 }
 
 
@@ -40,34 +40,36 @@ public void setId(Long id) {
 }
 
 
-public String getTitle() {
-	return title;
+public String getFirstname() {
+	return firstname;
 }
 
 
-public void setTitle(String title) {
-	this.title = title;
+public void setFirstname(String firstname) {
+	this.firstname = firstname;
 }
 
 
-public String getGenre() {
-	return genre;
+public String getLastname() {
+	return lastname;
 }
 
 
-public void setGenre(String genre) {
-	this.genre = genre;
+public void setLastname(String lastname) {
+	this.lastname = lastname;
 }
 
 
-public String getRating() {
-	return rating;
+public String getAccountnumber() {
+	return accountnumber;
 }
 
 
-public void setRating(String rating) {
-	this.rating = rating;
+public void setAccountnumber(String accountnumber) {
+	this.accountnumber = accountnumber;
 }
+
+
 
 
 }

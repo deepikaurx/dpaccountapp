@@ -21,7 +21,7 @@ import com.qa.util.JSONUtil;
 
 public class AccountDBRepository implements IAccountRepository {
 	
-	private static final Logger LOGGER = Logger.getLogger(AccountDBRepository.class);
+
 
 	@PersistenceContext(unitName = "primary")
 	private EntityManager manager;
